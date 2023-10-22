@@ -13,6 +13,7 @@ body {
   .cards {
     display: flex;
     height: 100%;
+    justify-content: center;
   }
 
   .card {
@@ -47,18 +48,18 @@ body {
     }
   }
 
-    .board::before {
-      content: " ";
-      display: block;
-      width: 100%;
-      height: 100%;
-      background-image: url('https://cdna.artstation.com/p/assets/images/images/043/792/934/4k/chuang-ma-016.jpg?1638278989');
-      background-position: center;
-      background-size: cover;
-      opacity: 0.5;
-      z-index: -1;
-      position: absolute;
-    }
+  .board::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/043/792/934/4k/chuang-ma-016.jpg?1638278989');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+  }
 
   .board {
     --section-label-opacity: var(--label-opacity);
@@ -76,10 +77,12 @@ body {
     .boardsection {
       border: var(--section-border);
       width: 100%;
-      height: 20%;
+      height: 25%;
 
-      &.graveyard { width: 50%; }
+      &.garbage { width: 50%; }
       &.area { width: 50%; }
+      //&.inventory { width: 50%; }
+      //&.camp { width: 50%; }
 
       > .label {
         width: inherit;
@@ -94,5 +97,4 @@ body {
       }
     }
   }
-}
 }
