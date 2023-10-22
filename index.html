@@ -7,7 +7,92 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div class="board">
+      <div class="graveyard boardsection">
+        <div class="label">graveyard</div>
+      </div>
+
+      <div class="area boardsection">
+        <div class="label">area</div>
+      </div>
+
+      <div class="vicinity boardsection">
+        <div class="label">vicinity</div>
+
+        <div class="cards">
+          <div class="card" style="background-image: url('https://sportshub.cbsistatic.com/i/2021/03/18/2a6064ae-ad0a-4d8b-bd6a-dc3a716473fc/the-walking-dead-season-10-zombie-walker-1243914.jpg')">
+            <div class="header">
+              <div class="title">Limping Forest Snapper * Create: corpse</div>
+              <div class="stats">☠ / ❤❤❤</div>
+            </div>
+
+            <div class="description">
+              <ul>
+                <li>each turn ➔ Lone Forest Snapper attacks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="camp boardsection">
+        <div class="label">camp</div>
+
+
+        <div class="cards">
+          <div class="card" style="background-image: url('https://tile.loc.gov/image-services/iiif/service:afc:afc1991021:afc1991021_44773/full/pct:12.5/0/default.jpg')">
+            <div class="header">
+              <div class="title">Amature Barb Wire Fence</div>
+              <div class="stats">❤❤❤</div>
+            </div>
+
+            <div class="description">
+              <ul>
+                <li>remove one ❤ from Amature Barb Wire Fence ➔ ignore one ☠ from a <b>creature</b></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="inventory boardsection">
+        <div class="label">inventory</div>
+
+
+        <div class="cards">
+          <div class="card" style="background-image: url('https://www.galcogunleather.com/uimages/2021_image_project/owb/Leather_holster_OWB_Fletch_2_black_b.jpg')">
+            <div class="header">IronGrip's Holster Basic</div>
+
+            <div class="description">
+              one <b>small firearm</b> in your hand doesn't count to hand limit
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hand boardsection">
+        <div class="label">hand</div>
+
+        <div class="cards">
+          <div class="card" style="background-image: url('https://i0.wp.com/blog.cheaperthandirt.com/wp-content/uploads/2010/03/AdobeStock_275089783-scaled.jpeg?fit=2560%2C1707&ssl=1')">
+            <div class="header">
+              <div class="title">Glock's G19 * Weapon: small firearm</div>
+            </div>
+
+            <div class="description">
+              <ul>
+                <li> 1 bullet ➔ attack target creature for one ☠</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <script type="module" src="/src/index.ts"></script>
   </body>
 </html>
